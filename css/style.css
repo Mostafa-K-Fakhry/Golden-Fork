@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* start nav  */
+.nav {
+    background-color: black;
+    z-index: 1000;
+}
+.nav-item {
+    padding-left: 1rem;
+}
+/* ////////////////////////////// */
+
+/* start hero  */
+header{
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),   
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imgs/background.webp");
+  background-position: center center;
+  background-size: cover;
+}
+.resturant-name{
+    font-family: serif;
+    font-size: 4rem;
+    color: #FFC164;
+
+}
+
+.title {
+    font-size: 3rem;
+    color: #FFC164;
+    font-family: serif;
+    margin-bottom: 2rem;
+
+
+}
+.p-content{
+    color: white;
+    font-size: 1.6rem;
+}
+header .my-btn{
+    padding: 0.3rem 2rem;
+    font-size: 1.6rem;
+    background-color: transparent;
+    color: white;
+    margin-top: 2rem;
+    border-color: #FFC164;
+}
+/* //////////////////////////////////////// */
+
+/* start News */
+#News{
+    padding: 5rem 0 3rem 0;
+  
+    background-color: black;
+     box-shadow: 0 -8px 15px rgba(0, 0, 0 ,1);
+
+}
+#News .my-btn{
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    background-color: #FF9F0F;
+    color: black;
+    border-style: none;
+}
+
+#News p{
+    margin-top: 2rem;
+}
+#News h4{
+   font-size: 25px;
+   
+}
+#News .vector2{
+    width: 250px;
+}
+#News .vector1{
+    width: 200px;
+   
+}
+#News .desc{
+    font-size: 20px;
+}
+#News .rating i{
+    color: #F5BE32;
+}
+#News .food-img{
+    overflow: hidden;
+}
+#News .food-img img{
+    transition: transform 1s ease;
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+}
+#News .food-img img:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+/* ///////////////////////////////////////////// */
+
+/* start Specialities */
+#Specialities .btn-food{
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-color: #FF5C5C;
+    padding: .5rem 2rem;
+}
+#Specialities .btn-food:hover{
+    background-color: #FF5C5C;
+}
+.btn-food.active {
+   background-color:  #FF5C5C !important;
+    color: white;
+   
+  }
+#Specialities  img{
+   width: 400px;
+}
+#Specialities h4{
+    font-size: 1.6rem;
+}
+#Specialities span{
+    font-size: 1.4rem;
+    color: #FFC164;
+}
+#Specialities .row-size{
+    padding: 6rem 0;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+/* start Dining  */
+#Dining{
+    background-color: black;
+
+
+}
+#Dining h4{
+    font-size: 3rem;
+    color: white;
+    font-family: serif;
+    padding-bottom: 1rem;
+}
+#Dining .dining-photo{
+    position: relative;
+}
+#Dining .price{
+    color: #FF9F0F;
+    font-size: 3rem;
+    font-family: serif;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    box-shadow: 10px 0 20px rgba(0,0,0,1); 
+    background-color: black;
+   
+}
+#dining-slider {
+  position: relative;
+  overflow: hidden;
+  height: 450px; 
+}
+
+#dining-slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.7s ease-in-out;
+}
+
+#dining-slider .slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 2;
+}
+
+#dining-slider .slide.exit-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+
+/* ////////////////////////////////////////////////////// */
+
+/* start about  */
+#about{
+    background-color: black;
+    padding-bottom: 5rem;
+}
+#about .col-md-4{
+    border: 1px solid #F5BE32;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+
+/* start footer  */
+footer{
+
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),   
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../imgs/footer.webp");
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+
+footer h2{
+    font-size: 3rem;
+    font-family: serif;
+    text-align: center;
+    padding: 2rem 0;
+}
+footer i{
+    color: #FFC164;
+}
+
+/* ////////////////////////////////////////////  */
+/* start ipad media  */
+@media (max-width:1050px){
+   #about .col-md-4{
+    padding: 0 1rem 3rem 1rem;
+    border: 1px solid #F5BE32;
+   }
+}
+
+/* start mobile media  */
+@media (max-width: 576px) {
+  /* start nav  */
+  .navbar-nav {
+    text-align: center;
+  }
+  .nav-item {
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  /* start hero  */
+  header .resturant-name {
+    font-size: 2.5rem;
+  }
+  header h4 {
+    font-size: 1.2rem;
+  }
+  header .p-content {
+    font-size: 1rem;
+  }
+  header .my-btn {
+    font-size: 1.2rem;
+    padding: 0.3rem 1.2rem;
+  }
+
+  /*start News  */
+  #News .vector2,
+  #News .vector1 {
+    display: none; 
+  }
+  #News .title {
+    font-size: 2rem;
+  }
+  #News .p-content {
+    font-size: 1rem;
+  }
+  #News .desc {
+    font-size: 1rem;
+  }
+  #News .col-md-3 {
+    padding-bottom: 2rem;
+  }
+  #News .rating i {
+    font-size: 1rem;
+  }
+  #News .my-btn {
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+  }
+
+  /* start Specialities  */
+  #Specialities .btn-food {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    margin-left: .5rem;
+  }
+  #Specialities img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem ;
+  }
+  #Specialities h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  #Specialities span {
+    font-size: 1rem;
+  }
+
+  /* start Dining  */
+    #Dining h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #FF9F0F;
+  }
+  #Dining .text-white.fs-5 {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  #dining-slider {
+    height: 350px; 
+    position: relative;
+    overflow: hidden;
+  }
+  #dining-slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.7s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #Dining .price {
+    font-size: 1.8rem;
+  }
+
+  /* start About */
+  #about .col-md-6,
+  #about .col-md-4.offset-2 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border: none;
+  }
+  #about .col-md-4.offset-2 p {
+    font-size: 1rem;
+  }
+
+  /* start Footer */
+  footer h2 {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+  }
+  footer p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
